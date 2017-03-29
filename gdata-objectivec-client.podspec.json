@@ -14,7 +14,8 @@
   },
   "authors": "The Google Data APIs team",
   "source": {
-    "git": "https://github.com/google/gdata-objectivec-client.git"
+    "git": "https://github.com/pushd/gdata-objectivec-client.git",
+    "tag": "gdata-objectivec-client-1.12.0"
   },
   "platforms": {
     "ios": "7.0"
