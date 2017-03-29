@@ -1,9 +1,8 @@
 {
-  "name": "GDataSession",
+  "name": "GData-session",
   "version": "1.12.0",
   "license": {
-    "type": "Apache License, Version 2.0",
-    "file": "COPYING.txt"
+    "type": "Apache License, Version 2.0"
   },
   "summary": "The Google data APIs provide a simple protocol for reading and writing data on the web. Many Google services provide a Google data API.",
   "homepage": "https://code.google.com/p/gdata-objectivec-client",
@@ -18,9 +17,8 @@
     "ios": "7.0"
   },
   "dependencies": {
-    "GTMSessionFetcher": [
-
-    ]
+    "GTMSessionFetcher": [],
+    "GTMOAuth2":[]
   },
   "requires_arc": false,
   "subspecs": [
