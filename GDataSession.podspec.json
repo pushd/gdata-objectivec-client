@@ -1,18 +1,15 @@
 {
-  "name": "gdata-objectivec-client",
+  "name": "GDataSession",
   "version": "1.12.0",
   "license": {
     "type": "Apache License, Version 2.0",
     "file": "COPYING.txt"
   },
-  "summary": "The XML support part of library gdata-objectivec-client",
-  "description": "The Google data APIs provide a simple protocol for reading and writing data on the web. Many Google services provide a Google data API.",
-  "homepage": "https://github.com/google/gdata-objectivec-client/",
-  "license": {
-    "type": "Apache License, Version 2.0",
-    "file": "LICENSE"
+  "summary": "The Google data APIs provide a simple protocol for reading and writing data on the web. Many Google services provide a Google data API.",
+  "homepage": "https://code.google.com/p/gdata-objectivec-client",
+  "authors": {
+    "The Google Data APIs team": "https://code.google.com/p/gdata-objectivec-client"
   },
-  "authors": "The Google Data APIs team",
   "source": {
     "git": "https://github.com/pushd/gdata-objectivec-client.git",
     "tag": "gdata-objectivec-client-1.12.0"
@@ -21,7 +18,9 @@
     "ios": "7.0"
   },
   "dependencies": {
-    "gtm-session-fetcher": []
+    "GTMSessionFetcher": [
+
+    ]
   },
   "requires_arc": false,
   "subspecs": [
