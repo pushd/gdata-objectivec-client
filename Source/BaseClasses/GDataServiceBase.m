@@ -75,6 +75,9 @@ static void XorPlainMutableData(NSMutableData *mutableData) {
 }
 @end
 
+#if defined(__has_include) && __has_include("GTMSessionUploadFetcher.h")
+#import "GTMSessionUploadFetcher.h"
+#else
 @interface GDataUploadFetcherClass : GTMBridgeFetcher
 
 // If GDataUploadFetcher is available, it can be used for chunked uploads
@@ -83,6 +86,8 @@ static void XorPlainMutableData(NSMutableData *mutableData) {
 // as some projects may not have it available. The declared methods vary depending on the value of
 // GTM_USE_SESSION_FETCHER, since one is based on GTMSessionUploadFetcher and the other on
 // GTMHTTPUploadFetcher.
+
+
 #if GTM_USE_SESSION_FETCHER
 + (instancetype)uploadFetcherWithRequest:(NSURLRequest *)request
                           uploadMIMEType:(NSString *)uploadMIMEType
@@ -121,6 +126,8 @@ static void XorPlainMutableData(NSMutableData *mutableData) {
 - (BOOL)isPaused;
 
 @end
+#endif
+
 
 @interface GDataEntryBase (PrivateMethods)
 - (NSDictionary *)contentHeaders;
