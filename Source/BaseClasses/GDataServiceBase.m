@@ -30,6 +30,7 @@
 #import "GDataServiceBase.h"
 #import "GDataServerError.h"
 #import "GDataFramework.h"
+#import <GTMSessionFetcher/GTMSessionUploadFetcher.h>
 
 static NSString *const kXMLErrorContentType = @"application/vnd.google.gdata.error+xml";
 

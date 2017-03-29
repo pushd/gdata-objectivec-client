@@ -21,7 +21,7 @@
 
 #import "GDataEntryBase.h"
 #import "GDataBaseElements.h"
-#import <gtm_session_fetcher/GTMMIMEDocument.h>
+#import <GTMSessionFetcher/GTMMIMEDocument.h>
 
 @implementation GDataEntryBase
 
